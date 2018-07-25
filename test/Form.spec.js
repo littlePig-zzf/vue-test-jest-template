@@ -54,16 +54,14 @@ describe('Form.test.js', () => {
       })
     })
 
-    it('is not called if values are the same', next => {
-      cmp = shallowMount(Form, { inputValue: 'foo' })
-      cmp.vm.inputValue = 'foo'
+    // it('is not called if values are the same', next => {
+    //   cmp = shallowMount(Form, { inputValue: 'foo' })
+    //   cmp.vm.inputValue = 'foo'
 
-      cmp.vm.$nextTick(()=>{
-        expect(spy).not.toBeCalled()
-        next()
-      })
-    })
-
-
+    //   cmp.vm.$nextTick(()=>{
+    //     expect(spy).not.toBeCalled()
+    //     next()
+    //   })
+    // })
   })
 })
