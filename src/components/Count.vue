@@ -1,7 +1,7 @@
 <template>
     <div>
         <button class="calPlus" @click="plusCount">求和</button>
-        <p>{{ all }}}</p>
+        <p>{{ all }}</p>
         <button class="reverse">去返</button>
         <p>{{ setReverse }}</p>
 
@@ -16,7 +16,9 @@
         props: {
             item: {
                 type: Array,
-                default: ()=>[]
+                default: ()=>{
+                    return []
+                }
             }
         },
         data () {

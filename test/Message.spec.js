@@ -26,7 +26,7 @@ describe('Message.test.js', ()=>{
   describe('Properties', ()=>{
     it('has a message property', () => {
       cmp = createCmp({ message: 'hey' })
-      expect(cmp.hasProp('message', 'hey')).toBeTruthy()
+      expect(cmp.props('message', 'hey')).toBeTruthy()
     })
   })
 

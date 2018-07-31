@@ -11,10 +11,10 @@ export default {
   name: 'list',
   props: {
     items: {
-        type: Array,
-        default: ()=>{
-            return []
-        }
+      type: Array,
+      default: ()=>{
+          return []
+      }
     }
   }
 }
